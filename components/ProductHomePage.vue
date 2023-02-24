@@ -2,12 +2,12 @@
   <div>
     <section>
       <div class="max-w-screen-xl px-4 py-8 mx-auto sm:px-6 sm:py-12 lg:px-8">
-        <header>
-          <h2 class="text-xl font-bold text-gray-900 sm:text-3xl">
+        <header class="grid grid-cols-1 text-center">
+          <h2 class="mx-auto text-xl font-bold text-gray-900 sm:text-3xl">
             Product Collection
           </h2>
 
-          <p class="max-w-md mt-4 text-gray-500">
+          <p class="mx-auto max-w-lg mt-4 text-gray-500">
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque
             praesentium cumque iure dicta incidunt est ipsam, officia dolor
             fugit natus?
@@ -70,7 +70,7 @@
           </div>
         </div> -->
 
-        <ul  class="grid gap-4 mt-4 sm:grid-cols-2 lg:grid-cols-4">
+        <ul  class="grid gap-4 mt-4 sm:grid-cols-2 md:grid-cols- lg:grid-cols-4">
           <li 
             v-for="(product, index) in productHomePage"
             :key="index"
@@ -82,13 +82,10 @@
                 class="h-[350px] w-full object-cover transition duration-500 group-hover:scale-105 sm:h-[450px]"
               />
 
-              <div class="relative ml-auto mr-auto pt-3 bg-white">
-                <h3 class="flex justify-center text-lg text-gray-700 group-hover:underline group-hover:underline-offset-8">
+              <div class="relative ml-auto mr-auto -mt-5 bg-white">
+                <h3 class="flex justify-center font-semibold text-lg text-gray-700 group-hover:text-[#0CDE77] group-hover:underline group-hover:underline-offset-8">
                   {{ product.name }}
                 </h3>
-                <p class="flex justify-center mt-2">
-                  <span class="tracking-wider text-red-500"> Rp. {{ product.price }} </span>
-                </p>
               </div>
             </nuxt-link>
           </li>
@@ -106,25 +103,25 @@ export default {
         {
           image:
             "https://bb-scm-prod-pim.oss-ap-southeast-5.aliyuncs.com/products/7eca1fd03f15b186b09bdb5c9a60ac0b/helix/01-APPLE-8DVPHAPPA-APPMQ9P3ID-A-Space%20Black1.jpg",
-          name: "iPhone 14 Pro Max",
+          name: "iPhone",
           price: "20.999.000",
         },
         {
           image:
             "https://bb-scm-prod-pim.oss-ap-southeast-5.aliyuncs.com/products/0a3a7f87e43a73d920b916e7d3c6e1d6/helix/01-APPLE-8DVLPAPP0-APPMGN63ID-A-SpaceGrayRevSS.jpg",
-          name: "MacBook Air M1 2020 13 inch",
+          name: "Mac",
           price: "13.999.000",
         },
         {
           image:
             "https://bb-scm-prod-pim.oss-ap-southeast-5.aliyuncs.com/products/26b725a3e06a7717878aea19573f3940/helix/01-APPLE-8DVWAAPP0-APPLE-WATCH-S8-45-SIL-AL-WT-SP-GPS-IND-Silver.jpg",
-          name: "Apple Watch S8",
+          name: "Watch",
           price: "6.999.000",
         },
         {
           image:
             "https://bb-scm-prod-pim.oss-ap-southeast-5.aliyuncs.com/products/3d2e443d797bc9fff440a14ae7700efd/helix/01-APPLE-8DVTBAPP0-APPMNYM3PA-A-Silver.jpg",
-          name: "iPad Pro 11 inch (2022)",
+          name: "iPad",
           price: "15.499.000",
         },
       ],

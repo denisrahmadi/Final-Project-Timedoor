@@ -1,6 +1,6 @@
 <template>
   <div>
-    <header aria-label="Site Header" class="bg-gray-900">
+    <header aria-label="Site Header" class="bg-gray-900 sm:w-full">
       <div class="mx-auto max-w-screen-xl px-4 py-4 sm:px-6 lg:px-8">
         <div class="flex h-16 items-center justify-between">
           <div class="flex-1 md:flex md:items-center md:gap-3">
@@ -18,7 +18,7 @@
                 />
               </svg>
             </nuxt-link>
-            <nuxt-link class="block text-[#0CDE77] text-[40px]" to="/">
+            <nuxt-link class="block text-[#0CDE77] text-[40px] font-[Helvetica]" to="/">
               iGapple
             </nuxt-link>
           </div>
@@ -39,7 +39,23 @@
                     class="text-white hover:text-[#0CDE77]  hover:underline hover:underline-offset-8"
                     to="/checkout"
                   >
-                    Checkout
+                    <i class="fa-solid fa-cart-shopping"></i>
+                  </nuxt-link>
+                </li>
+                <li>
+                  <nuxt-link
+                    class="text-white hover:text-[#0CDE77]  hover:underline hover:underline-offset-8"
+                    to="/checkout"
+                  >
+                  <i class="fa-solid fa-heart"></i>
+                  </nuxt-link>
+                </li>
+                <li>
+                  <nuxt-link
+                    class="text-white hover:text-[#0CDE77]  hover:underline hover:underline-offset-8"
+                    to="/checkout"
+                  >
+                    <i class="fa-solid fa-user"></i>
                   </nuxt-link>
                 </li>
               </ul>

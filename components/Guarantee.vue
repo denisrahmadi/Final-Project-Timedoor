@@ -1,13 +1,12 @@
 <template>
     <div>
-        <div class="mt-32">
-            <ul class="flex justify-center gap-16">
-                <li v-for="(item, index) in guaranteeData" :key="index" >
-                    <div class="overflow-hidden w-40 text-left">
-                        <img :src="item.logo" alt="" class="w-[125px]">
-                        <h5 class="font-bold mt-4">{{ item.title }}</h5>
-                        <p class="font-normal">{{ item.detail }}</p>
-                    </div>
+        <div class="container mt-20">
+            <h3 class="text-center font-semibold mb-14 text-xl">Our Benefits</h3>
+            <ul class="grid justify-center gap-3 grid-cols-4">
+                <li v-for="(item, index) in guaranteeData" :key="index" class="w-40 mx-auto">
+                        <img :src="item.logo" alt="" class="w-[100px]">
+                    <h5 class="font-bold mt-1">{{ item.title }}</h5>
+                    <p class="text-lef">{{ item.detail }}</p>
                 </li>
             </ul>
         </div>
@@ -20,12 +19,12 @@ export default {
             guaranteeData: [
                 {
                     logo: "https://cdn-icons-png.flaticon.com/512/3734/3734879.png",
-                    title: "GARANSI iGapple",
+                    title: "GARANSI",
                     detail: "Produk bergaransi resmi",
                 },
                 {
                     logo: "https://cdn-icons-png.flaticon.com/512/1621/1621563.png",
-                    title: "iGapple MEMBERSHIP",
+                    title: "MEMBERSHIP",
                     detail: "Dapatkan penawaran menarik khusus member",
                 },
                 {
@@ -35,7 +34,7 @@ export default {
                 },
                 {
                     logo: "https://cdn-icons-png.flaticon.com/128/709/709790.png",
-                    title: "PENGIRIMAN CEPAT & AMAN",
+                    title: "FREE DELIVERY",
                     detail: "Jaminan barang rusak",
                 },
             ]

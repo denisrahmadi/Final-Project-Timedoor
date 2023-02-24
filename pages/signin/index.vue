@@ -1,7 +1,7 @@
 <template>
   <div>
-    <section class="bg-gray-900 pb-80">
-        <div class="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
+    <section class="bg-gray-900 pt-10 pb-[133px]">
+        <div class="mx-auto max-w-screen-xl px-4 py-20 sm:px-6 lg:px-8">
           <div class="mx-auto max-w-lg text-center">
             <h1 class="text-2xl font-bold sm:text-3xl text-white">Get started today!</h1>
     

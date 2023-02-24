@@ -38,8 +38,20 @@ export default {
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
     '@nuxt/postcss8',
+    '@nuxtjs/svg'
   ],
 
+  svg: {
+    vueSvgLoader: {
+        // vue-svg-loader options
+    },
+    svgSpriteLoader: {
+        // svg-sprite-loader options
+    },
+    fileLoader: {
+        // file-loader options
+    }
+},
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
   ],

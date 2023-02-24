@@ -1,7 +1,7 @@
 <template>
   <div>
     <section class="bg-white dark:bg-gray-900">
-      <div class="lg:grid lg:min-h-screen lg:grid-cols-12">
+      <div class="grid lg:min-h-screen lg:grid-cols-12">
         <section
           class="relative flex h-32 items-end bg-gray-900 lg:col-span-5 lg:h-full xl:col-span-6"
         >
@@ -67,7 +67,7 @@
               <h1
                 class="mt-2 text-2xl font-bold text-gray-900 dark:text-white sm:text-3xl md:text-4xl"
               >
-                Welcome to Squid 🦑
+                Welcome to iGapple
               </h1>
 
               <p class="mt-4 leading-relaxed text-gray-500 dark:text-gray-400">
@@ -187,27 +187,27 @@
                     href="#"
                     class="text-gray-700 underline dark:text-gray-200"
                   >
-                    privacy policy </a
-                  >.
+                    privacy policy. </a
+                  >
                 </p>
               </div>
 
-              <div class="col-span-6 sm:flex sm:items-center sm:gap-4">
+              <div class="col-span-6 sm:flex sm:items-center sm:gap-4 ">
                 <button
-                  class="inline-block shrink-0 rounded-md border outline outline-[#0CDE77] bg-transparent px-12 py-3 text-sm font-medium text-white transition hover:bg-transparent hover:text-blue-600 focus:outline-none focus:ring active:text-blue-500 dark:hover:bg-[#0CDE77] dark:hover:text-black"
+                  class="inline-block shrink-0 rounded-md border outline outline-[#0CDE77] bg-transparent px-48 py-3 text-sm font-medium text-white transition hover:bg-transparent hover:text-blue-600 focus:outline-none focus:ring active:text-blue-500 dark:hover:bg-[#0CDE77] dark:hover:text-black"
                 >
                   Create an account
                 </button>
 
-                <p
-                  class="mt-4 text-sm text-gray-500 dark:text-gray-400 sm:mt-0"
-                >
-                  Already have an account?
-                  <nuxt-link to="/signin" class="text-[#0CDE77] hover:underline hover:underline-offset-8">
-                    Sign In
-                  </nuxt-link>.
-                </p>
               </div>
+              <p
+                class="w-52 mt-4 text-sm text-gray-500 dark:text-gray-400 sm:mt-0"
+              >
+                Already have an account?
+                <nuxt-link to="/signin" class="text-[#0CDE77] hover:underline hover:underline-offset-8">
+                  Sign In
+                </nuxt-link>
+              </p>
             </form>
           </div>
         </main>
